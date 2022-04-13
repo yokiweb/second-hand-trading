@@ -23,8 +23,8 @@ public class AddressController {
 
     @GetMapping("/info")
     public  ResultVo getAddress(@CookieValue("shUserId")
-                                    @NotNull(message = "登录异常 请重新登录")
-                                    @NotEmpty(message = "登录异常 请重新登录") String shUserId,
+                                    @NotNull(message = "登录异常，请重新登录")
+                                    @NotEmpty(message = "登录异常，请重新登录") String shUserId,
                                 @RequestParam(value = "id",required = false) Long id){
         if(null==id){
             return ResultVo.success(addressService.getAddressByUser(Long.valueOf(shUserId)));
