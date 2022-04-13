@@ -10,6 +10,7 @@
   <sql id="Base_Column_List">
     id, account_number, admin_password, admin_name
   </sql>
+<!--  查询用户-->
   <select id="login" resultMap="BaseResultMap">
     select id, account_number, admin_name
     from sh_admin
