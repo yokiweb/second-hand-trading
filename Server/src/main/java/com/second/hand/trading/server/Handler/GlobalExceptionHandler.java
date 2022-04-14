@@ -49,6 +49,9 @@ public class GlobalExceptionHandler {
      * @param e e.getMessage()返回首个缺少的参数名
      * @return
      */
+
+
+
     @ExceptionHandler(MissingServletRequestParameterException.class)
     public ResultVo MissingServletRequestParameterExceptionHandler(MissingServletRequestParameterException e) {
         return ResultVo.fail(ErrorMsg.MISSING_PARAMETER, "缺少参数"+e.getParameterName());
@@ -77,7 +80,7 @@ public class GlobalExceptionHandler {
 
     /*@ExceptionHandler(Exception.class)
     public Object CommonExceptionHandler(Exception e){
-        return "服务器错误";
+        return "服务器错误 ";
     }*/
 
 
