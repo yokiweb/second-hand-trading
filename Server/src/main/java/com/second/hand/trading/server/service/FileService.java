@@ -5,7 +5,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 
 /**
- * @author myl
+ * @author yoki
  * @create 2020-12-20  20:39
  */
 public interface FileService {

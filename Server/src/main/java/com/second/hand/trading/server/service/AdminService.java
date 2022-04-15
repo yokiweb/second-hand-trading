@@ -4,7 +4,7 @@ import com.second.hand.trading.server.model.AdminModel;
 import com.second.hand.trading.server.vo.PageVo;
 
 /**
- * @author myl
+ * @author yoki
  * @create 2021-02-07  22:00
  */
 public interface AdminService {

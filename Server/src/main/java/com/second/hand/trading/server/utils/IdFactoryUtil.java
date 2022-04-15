@@ -3,7 +3,7 @@ package com.second.hand.trading.server.utils;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * @author myl
+ * @author yoki
  * @create 2020-12-25  14:25
  */
 public class IdFactoryUtil {

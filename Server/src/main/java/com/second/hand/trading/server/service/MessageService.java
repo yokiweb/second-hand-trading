@@ -5,7 +5,7 @@ import com.second.hand.trading.server.model.MessageModel;
 import java.util.List;
 
 /**
- * @author myl
+ * @author yoki
  * @create 2020-12-26  22:36
  */
 public interface MessageService {

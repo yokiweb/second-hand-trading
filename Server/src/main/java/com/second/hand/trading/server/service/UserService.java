@@ -4,7 +4,7 @@ import com.second.hand.trading.server.model.UserModel;
 import com.second.hand.trading.server.vo.PageVo;
 
 /**
- * @author myl
+ * @author yoki
  * @create 2020-12-17  10:15
  */
 public interface UserService {

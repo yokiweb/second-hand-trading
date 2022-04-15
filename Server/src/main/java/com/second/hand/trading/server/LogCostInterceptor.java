@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Date;
 
 /**
- * @author myl
+ * @author yoki
  * @create 2020-12-26  19:57
  */
 public class LogCostInterceptor implements HandlerInterceptor {

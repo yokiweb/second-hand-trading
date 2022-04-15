@@ -16,7 +16,7 @@ import java.util.Map;
 /**
  * 收藏的增删改查
  * user_id建索引
- * @author myl
+ * @author yoki
  * @create 2020-12-26  20:23
  */
 @Service
