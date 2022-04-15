@@ -13,19 +13,16 @@
     <result column="idle_status" jdbcType="TINYINT" property="idleStatus" />
     <result column="user_id" jdbcType="BIGINT" property="userId" />
   </resultMap>
-
   <sql id="Base_Column_List">
     id, idle_name, idle_details, picture_list, idle_price, idle_place, idle_label, release_time, 
     idle_status, user_id
   </sql>
-<!--  查询商品-->
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from sh_idle_item
     where id = #{id,jdbcType=BIGINT}
   </select>
-<!--  查询上学商品-状态-->
   <select id="getAllIdleItem" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />

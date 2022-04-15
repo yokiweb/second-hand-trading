@@ -16,7 +16,6 @@
     id, consignee_name, consignee_phone, province_name, city_name, region_name, detail_address, 
     default_flag, user_id
   </sql>
-<!--  地址查询-->
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
