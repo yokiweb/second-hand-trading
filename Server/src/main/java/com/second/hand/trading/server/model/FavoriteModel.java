@@ -1,5 +1,7 @@
 package com.second.hand.trading.server.model;
 
+import lombok.Data;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -7,6 +9,7 @@ import java.util.Date;
  * sh_favorite
  * @author 
  */
+@Data
 public class FavoriteModel implements Serializable {
     /**
      * 自增主键id
@@ -31,46 +34,6 @@ public class FavoriteModel implements Serializable {
     private IdleItemModel idleItem;
 
     private static final long serialVersionUID = 1L;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
-
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
-
-    public Long getIdleId() {
-        return idleId;
-    }
-
-    public void setIdleId(Long idleId) {
-        this.idleId = idleId;
-    }
-
-    public IdleItemModel getIdleItem() {
-        return idleItem;
-    }
-
-    public void setIdleItem(IdleItemModel idleItem) {
-        this.idleItem = idleItem;
-    }
 
     @Override
     public boolean equals(Object that) {

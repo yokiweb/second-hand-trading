@@ -1,11 +1,15 @@
 package com.second.hand.trading.server.model;
 
+import lombok.Data;
+
 import java.io.Serializable;
 
 /**
  * sh_address
  * @author yoki
  */
+
+@Data
 public class AddressModel implements Serializable {
     /**
      * 自增主键
@@ -54,77 +58,7 @@ public class AddressModel implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getConsigneeName() {
-        return consigneeName;
-    }
-
-    public void setConsigneeName(String consigneeName) {
-        this.consigneeName = consigneeName;
-    }
-
-    public String getConsigneePhone() {
-        return consigneePhone;
-    }
-
-    public void setConsigneePhone(String consigneePhone) {
-        this.consigneePhone = consigneePhone;
-    }
-
-    public String getProvinceName() {
-        return provinceName;
-    }
-
-    public void setProvinceName(String provinceName) {
-        this.provinceName = provinceName;
-    }
-
-    public String getCityName() {
-        return cityName;
-    }
-
-    public void setCityName(String cityName) {
-        this.cityName = cityName;
-    }
-
-    public String getRegionName() {
-        return regionName;
-    }
-
-    public void setRegionName(String regionName) {
-        this.regionName = regionName;
-    }
-
-    public String getDetailAddress() {
-        return detailAddress;
-    }
-
-    public void setDetailAddress(String detailAddress) {
-        this.detailAddress = detailAddress;
-    }
-
-    public Boolean getDefaultFlag() {
-        return defaultFlag;
-    }
-
-    public void setDefaultFlag(Boolean defaultFlag) {
-        this.defaultFlag = defaultFlag;
-    }
-
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
 
     @Override
     public boolean equals(Object that) {

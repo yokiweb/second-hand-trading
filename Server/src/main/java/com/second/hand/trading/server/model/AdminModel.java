@@ -1,11 +1,16 @@
 package com.second.hand.trading.server.model;
 
+import lombok.Data;
+
 import java.io.Serializable;
 
 /**
  * sh_admin
  * @author 
  */
+
+
+@Data
 public class AdminModel implements Serializable {
     /**
      * 自增主键
@@ -29,37 +34,6 @@ public class AdminModel implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getAccountNumber() {
-        return accountNumber;
-    }
-
-    public void setAccountNumber(String accountNumber) {
-        this.accountNumber = accountNumber;
-    }
-
-    public String getAdminPassword() {
-        return adminPassword;
-    }
-
-    public void setAdminPassword(String adminPassword) {
-        this.adminPassword = adminPassword;
-    }
-
-    public String getAdminName() {
-        return adminName;
-    }
-
-    public void setAdminName(String adminName) {
-        this.adminName = adminName;
-    }
 
     @Override
     public boolean equals(Object that) {

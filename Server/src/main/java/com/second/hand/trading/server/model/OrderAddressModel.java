@@ -1,11 +1,15 @@
 package com.second.hand.trading.server.model;
 
+import lombok.Data;
+
 import java.io.Serializable;
 
 /**
  * sh_order_address
  * @author 
  */
+
+@Data
 public class OrderAddressModel implements Serializable {
     private Long id;
 
@@ -19,45 +23,6 @@ public class OrderAddressModel implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getOrderId() {
-        return orderId;
-    }
-
-    public void setOrderId(Long orderId) {
-        this.orderId = orderId;
-    }
-
-    public String getConsigneeName() {
-        return consigneeName;
-    }
-
-    public void setConsigneeName(String consigneeName) {
-        this.consigneeName = consigneeName;
-    }
-
-    public String getConsigneePhone() {
-        return consigneePhone;
-    }
-
-    public void setConsigneePhone(String consigneePhone) {
-        this.consigneePhone = consigneePhone;
-    }
-
-    public String getDetailAddress() {
-        return detailAddress;
-    }
-
-    public void setDetailAddress(String detailAddress) {
-        this.detailAddress = detailAddress;
-    }
 
     @Override
     public boolean equals(Object that) {

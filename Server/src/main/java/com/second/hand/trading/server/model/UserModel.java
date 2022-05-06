@@ -1,5 +1,7 @@
 package com.second.hand.trading.server.model;
 
+import lombok.Data;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -7,6 +9,7 @@ import java.util.Date;
  * sh_user
  * @author yoki
  */
+@Data
 public class UserModel implements Serializable {
     /**
      * 自增主键
@@ -42,61 +45,6 @@ public class UserModel implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getAccountNumber() {
-        return accountNumber;
-    }
-
-    public void setAccountNumber(String accountNumber) {
-        this.accountNumber = accountNumber;
-    }
-
-    public String getUserPassword() {
-        return userPassword;
-    }
-
-    public void setUserPassword(String userPassword) {
-        this.userPassword = userPassword;
-    }
-
-    public String getNickname() {
-        return nickname;
-    }
-
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
-    }
-
-    public String getAvatar() {
-        return avatar;
-    }
-
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
-    }
-
-    public Date getSignInTime() {
-        return signInTime;
-    }
-
-    public void setSignInTime(Date signInTime) {
-        this.signInTime = signInTime;
-    }
-
-    public Byte getUserStatus() {
-        return userStatus;
-    }
-
-    public void setUserStatus(Byte userStatus) {
-        this.userStatus = userStatus;
-    }
 
     @Override
     public boolean equals(Object that) {
